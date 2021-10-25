@@ -1,0 +1,43 @@
+{
+    "question1": {
+        "question":"Q1: What is the full form of CPU?",
+        "a": ". Central Process Unit",
+        "b": ". Central Processing Unit",
+        "c": ". Central Programming Unit",
+        "d": ". Central Progressive Unit",
+        "correct": "b"
+    },
+    "question2": {
+        "question": " Q2: What is the full form of ALU?",
+        "a": ". Select all ",
+        "b": ". Advance Logical Unit",
+        "c": ". Arithmetic Local Unit",
+        "d": ". Arithmetic Logic Unit",
+        "correct": "d"
+    },
+    "question3": {
+        "question": "Q3: What is an Internet?",
+        "a": ". Interconnected computers from the world",
+        "b": ". Select all",
+        "c": ". Wide Area Network",
+        "d": ". Network of Network",
+        "correct": "b"
+    },
+    "question4": {
+        "question": "Q4: What does an Operating System do?",
+        "a": ". Memory Management",
+        "b": ". File Management",
+        "c": ". Application Management",
+        "d": ". All of the above",
+        "correct": "d"
+    },
+    "question5": {
+        "question": "Q5: Which part of the computer is considered as Brain of the Computer?",
+        "a": ". Read Only Memory",
+        "b": ". Random Access Memory",
+        "c": ". Central Process Unit",
+        "d": ". Hard Disk",
+        "correct": "c"
+    }
+
+}

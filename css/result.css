@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #6b34b3;
+
+}
+
+
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 40%;
+
+    min-height: 300px;
+    display: flex;
+    margin: 50px;
+    position: relative;
+}
+
+.winnerImage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: -140px;
+}
+
+.loserImage {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 160px;
+    left: 15px;
+}
+
+.textResult {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+
+.resultQout {
+    width: 80%;
+    font-size: 1.8rem;
+    margin: 0 auto 40px;
+    color: #6b34b3;
+    font-weight: bolder;
+}
+
+.result {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 50px;
+    margin: 50px 0 40px 240px;
+    color: #6b34b3;
+    font-weight: bolder;
+}
+
+.viewAnswersBtn {
+    width: 150px;
+    color: #6b34b3;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    transition: transform .2s;
+}
+
+.viewAnswersBtn i {
+    display: none;
+}
+
+.viewAnswersBtn:hover {
+    font-weight: 600;
+}
+
+.viewAnswersBtn:hover i {
+    display: inline;
+}
+
+.resultTable {
+    width: 100%;
+}
+
+/* log out and back to course buttons */
+.finshBtnsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.finshBtnsContainer .btn {
+    width: 35%;
+    height: 40px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 5px;
+    transform: scale(1) translateY(0);
+    transition: all .3s;
+    color: #6b34b3;
+    border: none;
+    padding: 5px;
+
+}
+
+.finshBtnsContainer .btn:hover {
+    transform: scale(1.1) translateY(-5px);
+
+}
+
+.finshBtnsContainer .btn a {
+    color: #03045E;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* elements which created by javascript */
+.answersTable {
+    width: 90%;
+    min-height: 100px;
+
+}
+
+.answersTable div {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1rem !important;
+}
+
+
+.answer {
+    font-size: 1.2rem;
+    width: 100%;
+    min-height: 75px;
+    border: 1px solid #17b617;
+    color: #0bc00b;
+    margin: 20px 0;
+    padding: 25px 10px 10px 10px;
+    background-color: #62ff7962;
+
+}
+
+.answer div {
+    margin: 10px 15px 0;
+    color: #03045E;
+}
+
+@media(max-width:1042px) {
+
+    .resultContainer {
+        width: 90%;
+        min-height: 70vh;
+        display: flex;
+
+    }
+
+    .resultQout {
+        margin: 20px auto;
+        text-align: center;
+
+    }
+
+    .textResult {
+        width: 100%;
+        height: 90%;
+    }
+
+    .result {
+        margin: 100px 0 40px 500px;
+
+    }
+
+    .viewAnswersBtn {
+        margin-left: 300px;
+    }
+
+    .loserImage {
+        width: 50%;
+        top: 90px;
+        left: 10px;
+
+    }
+
+    .winnerImage {
+        width: 30%;
+        top: 150px;
+        left: 50px;
+
+    }
+
+}
+
+@media(max-width:770px) {
+    .result {
+        margin-left: 290px;
+        margin-top: 90px;
+
+    }
+
+    .viewAnswersBtn {
+        margin-left: 130px;
+    }
+
+    .loserImage {
+        width: 30%;
+    }
+
+    .loserImage {
+        width: 50%;
+        top: 140px;
+        left: 10px;
+
+    }
+}
+
+@media(max-width:450px) {
+    .resultQout {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .result {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .viewAnswersBtn {
+        align-self: center;
+        margin: 290px 0 0;
+
+    }
+
+    .textResult {
+        padding: 10px;
+    }
+
+    .answer {
+        margin: 5px 0;
+    }
+
+    .winnerImage {
+        width: 50%;
+        top: 180px;
+        left: 100px;
+    }
+
+    .loserImage {
+        width: 80%;
+        top: 250px;
+        left: 20px;
+    }
+
+}
+
+@media(max-width:320px) {
+    .textResult {
+        margin-bottom: 20px;
+    }
+
+    .winnerImage {
+        top: 220px;
+        left: 70px;
+    }
+
+    .finshBtnsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finshBtnsContainer .btn {
+        margin: 0 0 10px 0;
+        width: 80%;
+    }
+}
