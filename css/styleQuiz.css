@@ -26,7 +26,9 @@ body{
     border-radius: 5px;
     
 }
-
+#buttonStarted2{
+    background-color: orange;
+}
 .quiz_box header {
     position: relative;
     z-index: 2;

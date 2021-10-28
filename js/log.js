@@ -19,37 +19,7 @@ const logPassMessage = document.getElementById('loginPassMessage');
 // botton
 const logSubmit = document.getElementById('loginSubmit');
 
-// logSubmit.onclick = function(e){
-//     e.preventDefault();
-//     if(logEmail.value =='' ){
-//         logEmailMessage.style.color='rgb(199, 0, 0)'
-//         logEmailMessage.innerText = 'Enter Your Email';
-//         console.log(logEmailMessage)
-//     }else {
-//         if (logEmail.value.match(regexEmail)) {
-//             logPassMessage.innerText="";
-//             logEmail.style.border="2px solid #32CD32";
-//             logEmail.style.boxShadow="1px 0px 2px #32CD32";
-//         } else {
-//             logPassMessage.style.color='rgb(199, 0, 0)';
-//             logPassMessage.innerText="Invalid Email";
-//         }
-//         }
-//         if (logPassword.value == ""){
-//             logPassMessage.style.color='rgb(199, 0, 0)';
-//             logPassMessage.innerText='Enter the password'
-//         }else{
-//             if (logPassword.value.match(passMobile)) {
-//                 logPassMessage.innerText=""
-//                 logPassword.style.border="3px solid #32CD32";
-//                 logPassword.style.boxShadow="1px 0px 2px #32CD32";
-//             }
-//             else{
-//                 logPassMessage.style.color='rgb(199, 0, 0)'
-//                 logPassMessage.innerText="The Password should be between 6-18 characters."
-//             }
-//         }
-// }
+
 
 logEmail.addEventListener('keyup', () => {
     logEmailMessage.innerText='';

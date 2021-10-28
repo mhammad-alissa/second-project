@@ -11,7 +11,7 @@ winnerImage.style.display = "none";
 
 var correctAnswer = ["b", "d", "b", "d", "c"];
 localStorage.setItem("correctAnswer", JSON.stringify(correctAnswer));
-var retrievedObject = JSON.parse(localStorage.getItem("correctAnswer"));
+
 // to conver the correctAnswer from storge to array to the values for copersion
 var correctAnswerArray = JSON.parse(localStorage.getItem("correctAnswer"));
 

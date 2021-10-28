@@ -11,6 +11,9 @@ margin: 3px 20px;
 color: #f1eff5;
 
 }
+#buttonStarted2{
+  background-color:orange ;
+}
 .mainContainer{
     margin-top: 20vh;
     text-align: left;
@@ -43,7 +46,7 @@ p{
   text-decoration: none;
 }
   
-#buttonStarted {
+#buttonStarted,#buttonStarted2 {
     border-radius: 4px;
     background-color: #937fb5;
     border: none;

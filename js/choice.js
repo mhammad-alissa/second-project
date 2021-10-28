@@ -5,3 +5,7 @@ string3=string3.slice(0,string3.indexOf(','));
 console.log(string3)
 name1.innerHTML=string3.slice(0,string3.indexOf(" "))
 console.log(string3)
+
+function goto(name){
+sessionStorage.setItem('quizName',name);
+}

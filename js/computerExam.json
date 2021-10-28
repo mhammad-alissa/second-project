@@ -1,4 +1,4 @@
-{
+{"computer" : {
     "question1": {
         "question":"Q1: What is the full form of CPU?",
         "a": ". Central Process Unit",
@@ -39,5 +39,97 @@
         "d": ". Hard Disk",
         "correct": "c"
     }
+
+},
+
+"css":
+    {
+        "question1": {
+            "question":"Q1:  If We Want Define Style For An Unique Element, Then Which Css Selector Will We Use ?",
+            "a": ". Text ",
+            "b": ". ID",
+            "c": ". Class",
+            "d": ". Name ",
+            "correct": "b"
+        },
+        "question2": {
+            "question": " Q2:  Which CSS Property Sets The Stack Order Of An Element?",
+            "a": ". Overflow",
+            "b": ". Position",
+            "c": ". Clip",
+            "d": ". Z-index",
+            "correct": "d"
+        },
+        "question3": {
+            "question": "Q3: Which Of The Following Selector Selects An Element That Has No Children?",
+            "a": ". No-child",
+            "b": ". Empty",
+            "c": ". Inheritance",
+            "d": ". Select all",
+            "correct": "b"
+        },
+        "question4": {
+            "question": "Q4: How Can We Write Comment Along With CSS Code ?",
+            "a": ". / A Comment /",
+            "b": ". <' A Comment'>",
+            "c": ". // A Comment //",
+            "d": ". /* A Comment */",
+            "correct": "d"
+        },
+        "question5": {
+            "question": "Q5:  Which CSS Property Sets A Background Image For An Element?",
+            "a": ". Background - Attachment",
+            "b": ". Background - Color",
+            "c": ". Background - Image",
+            "d": ". None of These",
+            "correct": "c"
+        }
+    
+    },
+
+"english":
+{
+    "question1": {
+        "question":"Q1: A:_____ did you live in New York? B:I lived there for almost five years.",
+        "a": ". When",
+        "b": ". How long",
+        "c": ". How much",
+        "d": ". Nothing",
+        "correct": "b"
+    },
+    "question2": {
+        "question": " Q2: They threw a rock _____ the window and broke the glass.",
+        "a": ". across",
+        "b": ". into",
+        "c": ". nothing",
+        "d": ". through",
+        "correct": "d"
+    },
+    "question3": {
+        "question": "Q3: He didn't speak English, _____ it was difficult to make him understand what he had to do.",
+        "a": ". although",
+        "b": ". so",
+        "c": ". a+b",
+        "d": ". because",
+        "correct": "b"
+    },
+    "question4": {
+        "question": "Q4: Why did you turn off the TV? B: Because I _____. I'm very tired.",
+        "a": ". go to sleep",
+        "b": ". will go to sleep",
+        "c": ". select all",
+        "d": ". 'm going to sleep",
+        "correct": "d"
+    },
+    "question5": {
+        "question": "Q5: This is the famous wine _____ is produced in this region.",
+        "a": ". where",
+        "b": ". that it",
+        "c": ". which",
+        "d": ". when",
+        "correct": "c"
+    }
+
+}
 
 }

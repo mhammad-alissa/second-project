@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
 }
-
+.loginAndsignin{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.loginAndsignin:hover{
+    text-decoration: underline;
+    color: white;
+}
 .headerSignUp{
     margin: 30px 0 0 0;
     color: #6b34b3;

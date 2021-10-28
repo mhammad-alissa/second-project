@@ -1,18 +1,22 @@
-
-*{
+* {
 	padding: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 	margin: 0;
 }
+
 /*------------------- choice quis start -----------------*/
-.choice{
+body {
 	background-color: #6b34b3;
-	padding: 100px 0px;
-	height: 100vh;
 }
+
+.choice {
+	padding: 100px 0px;
+	min-height: 500px;
+}
+
 /* start title */
-.title h2{
+.title h2 {
 	background-color: rgb(221, 166, 238);
 	color: #353669;
 	font-size: 40px;
@@ -22,14 +26,15 @@
 	padding: 25px;
 	opacity: 0.9;
 	border-bottom: 4px solid white;
-	box-shadow: -5px 9px 22px -4px rgba(0,0,0,0.75);
+	box-shadow: -5px 9px 22px -4px rgba(0, 0, 0, 0.75);
 	overflow: hidden;
 }
-.user-N{
-	color:white;
+
+.user-N {
+	color: white;
 }
 
-.title h2 .imgLable{
+.title h2 .imgLable {
 	width: 50px;
 	height: 100px;
 	padding: 0;
@@ -37,18 +42,21 @@
 	float: right;
 }
 
-.fa,.fab ,.fas{
-    font-weight: 900;
-    width: 100px;
-    color: #6b34b3;
-    height: 80px;
-    font-size:80px;
+.fa,
+.fab,
+.fas {
+	font-weight: 900;
+	width: 100px;
+	color: #6b34b3;
+	height: 80px;
+	font-size: 80px;
 	margin-bottom: 15px;
 	/* margin: auto; */
 }
+
 /* end title */
 /* start card */
-.box{
+.box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -57,38 +65,41 @@
 	width: 72%;
 }
 
-.card{
+.card {
 	width: 33%;
 	padding: 20px 35px;
 	background-color: rgb(255, 255, 255);
-    color: black;
-	border-bottom: 8px solid rgb(221, 166, 238) ;
+	color: black;
+	border-bottom: 8px solid rgb(221, 166, 238);
 	margin: 15px;
 	text-align: center;
-	box-shadow: -5px 9px 22px -4px rgba(0,0,0,0.75);
+	box-shadow: -5px 9px 22px -4px rgba(0, 0, 0, 0.75);
 	height: 350px;
-	transform:  translatey(0);
-    transition: all .4s;
+	transform: translatey(0);
+	transition: all .4s;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 }
-.card:hover {
-	transform:  translatey(-20px);
-  }
 
-h5{
+.card:hover {
+	transform: translatey(-20px);
+}
+
+h5 {
 	font-size: 23px;
 	margin-bottom: 15px;
 }
-.linkToCourse p{
+
+.linkToCourse p {
 	color: black;
 	font-size: 20px;
 	line-height: 27px;
 	margin-bottom: 25px;
 }
-.card .button{
+
+.card .button {
 	background-color: #6b34b3;
 	color: white;
 	text-decoration: none;
@@ -96,54 +107,94 @@ h5{
 	font-weight: bold;
 	padding: 10px 18px;
 	border-radius: 30px;
-	transition: .4s; 
+	transition: .4s;
 	margin-bottom: -20px !important;
 }
-.card .button:hover{
+
+.card .button:hover {
 	background-color: white;
 	color: black;
 	border: 2px solid #03045E;
 	transition-duration: 0.5s;
 }
-.link{
+
+.link {
 	color: black;
 	text-decoration: none;
 }
-.link:hover{
+
+.link:hover {
 	background-color: transparent;
-    background-color: #03045E;
-    border-radius: 5px;
+	background-color: #03045E;
+	border-radius: 5px;
 	color: white;
 	border: 2px solid #03045E;
 }
+
 /* end card */
 /* start media */
-@media(max-width:1200px){
-	.box{
-		flex-direction:column;
+@media(max-width:1200px) {
+	.box {
+		flex-direction: column;
 	}
-	.choice{
+
+	.choice {
 		height: 1750px;
 	}
-	.card{
-		/* margin-top: 50px; */
-		width: 60%;
-		height: 450px;
-	}
-	.title h2 .imgLable{
-	width: 50px;
-    height: 100px;
-    padding: 0;
-    margin-top: -84px;
-    float: right;}
 
-.card *:not(.link){
-	margin: 25px;
-    }
-    .fa,.fab ,.fas{
-	font-size: 120px;
-	width: 170px;
-    }
+	.card {
+		/* margin-top: 50px; */
+		width: 97%;
+		height: 500px;
+		padding-bottom: 70px;
+
+	}
+
+	.card p {
+		font-size: 40px;
+		margin: 0;
+	}
+
+	.card i {
+		width: auto;
+		height: auto;
+		font-size: 130px;
+		margin: 5px;
+	}
+
+	.linkToCourse p {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.title h2 .imgLable {
+		width: 50px;
+		height: 100px;
+		padding: 0;
+		margin-top: -84px;
+		float: right;
+	}
+
+	.card *:not(.link) {
+		margin: 25px;
+	}
+
+	.fa,
+	.fab,
+	.fas {
+		font-size: 120px;
+		width: 170px;
+	}
+
+	.question {
+		font-size: 50px;
+	}
+
+	.card .button{
+		width: 200px;
+		font-size: 30px;
+	}
 }
+
 /* end media */
 /* ------------------------choice quis end-------------------------*/

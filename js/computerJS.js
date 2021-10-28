@@ -58,39 +58,28 @@ const generateQuestion = function (question) {
 }
 
 // now we want to generate the fetch Function to fetch Question from JSON File 
+var quizName=sessionStorage.getItem("quizName");
+var htr=quizName.charAt(0).toUpperCase()+quizName.slice(1);
+document.getElementById('quizId').innerHTML=`${htr} Quiz`
+console.log(quizName);
 const fetchQuestion = function () {
-    fetch('js/computerExam.json').then(res => res.json())
+    fetch('../js/computerExam.json').then(res => res.json())
         .then(questions => {
             if (counter > 5) return
-            const question = questions['question' + `${counter}`];
+            const question = questions[quizName]['question'+counter];
             generateQuestion(question);
             nextBtn.style.display = "inline-block";
+            console.log(question);
         })
+       
+
 }
 
 //this Function to compare the answers 
 const compareAnswers = function () {
-    let correctAnswers = 0;
-    let wrongAnswers = 0;
-    fetch('js/computerExam.json').then(res => res.json())
-        .then(questions => {
-            let correctAnswers = 0;
-            let wrongAnswers = 0;
-            for (let i = 1; i < 6; i++) {
-                const userAnswer = sessionStorage.getItem(`question${i}`)
-                const correctAnswer = questions[`question${i}`].correct;
-                userAnswersArr.push(userAnswer);
-                correctAnswersArr.push(correctAnswer);
-                if (userAnswer === correctAnswer) correctAnswers++;
-                else wrongAnswers++;
-            }
-            console.log(correctAnswersArr);
-            console.log(userAnswersArr);
-            window.location.href = "result.html";
-            // here must put the link to second page 
-        })
-    console.log(correctAnswersArr);
-    console.log(userAnswersArr);
+   
+            window.location.href = "../pages/result.html";
+            
 
 }
 fetchQuestion();
