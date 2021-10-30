@@ -2,14 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.loginAndsignin{
-    text-decoration: none;;
-    margin-left: 5px;
-    font-weight: bold;
-}
-.loginAndsignin:hover{
-    text-decoration: underline;
-}
 .headerSignUp{
     margin: 30px 0 0 0;
     color: #6b34b3;
@@ -63,7 +55,6 @@
 
 .logimMessage{
     padding: 20px;
-    color: black;
 }
 
 .stylesign{
@@ -72,31 +63,18 @@
 
 /* ------------- Login Page -------------- */
 .loginContainer{
-    background-color: rgb(255, 255, 255);
-    width: 900px;
+    background-color: rgba(255, 255, 255, 0.753);
+    width: 400px;
     height: 410px;
-    margin:auto ;
-    margin-top: 150px;
+    margin:110px auto 5px;
     border-radius: 22px 22px 22px 22px;
     box-shadow: -28px 27px 41px -28px rgba(0,0,0,1);
-}
-.loginContainer:hover{
-    transform: translatey(-20px);
-    background-color: rgb(240, 232, 240);
 }
 .headerLogin{
     text-align: center;
     padding: 20px;
     display: block;
     color: #6b34b3;
-    font-size: 30px;
-}
-.headerLogin::before {
-    content: "_";
-}
-
-.headerLogin::after {
-    content: "_";
 }
 .loginInput{
     background-color: rgb(158, 158, 158,0) !important;
@@ -117,30 +95,33 @@
     padding: 5px;
 }
 #loginSubmit{
-    width: 80%;
+    width: 50%;
     margin: auto;
+    height: 45px;
     border: none;
     border-radius: 200px 200px 200px 200px;
     border:0;
     margin-top: 50px;
     background-color: #6b34b3;
     color: white;
-    font-size: 25px;
 }
 #loginSubmit:hover{
-    background-color: #000000;
-    color: rgb(255, 248, 248);
-    border-bottom: #0bdae9 solid 3px;
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    border-bottom: black solid 3px;
     transition-duration: 0.5s;
  }
+
  /* -------------background -----------*/
 
 canvas{
     display:block;
     vertical-align:bottom;
   }
-  #particles-js1{
-    width: 50%;
+  
+  
+  #particles-js{
+    width: 100%;
     height: 100%;
     background-color: #6b34b3;
     background-image: url('');
@@ -151,19 +132,6 @@ canvas{
     top: 0;
     left: 0;
     z-index: -1;
-  }
-  #particles-js2{
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
   }
   
 
@@ -194,13 +162,3 @@ canvas{
      height:  100%;
     }
   }
-
-  @media (max-width: 410px) {
-    .loginContainer {
-     height:  fit-content;
-     padding-bottom: 50px;
-     width:80% ;
-    }
-  }
-
-
