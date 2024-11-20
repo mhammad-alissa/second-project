@@ -1,4 +1,4 @@
-# second-project#
+# WebQuizPlatform #
 # github me
 https://github.com/mhammad-alissa/second-project
 # link project
